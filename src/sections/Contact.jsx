@@ -23,7 +23,7 @@ function Contact() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/api/contact", {
+      const res = await fetch("https://portfolio-backend-8c34.vercel.app/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -50,9 +50,9 @@ function Contact() {
   ];
 
   const contactInfo = [
-    { icon: <FiMail />, title: "Email", value: "muskan@example.com" },
-    { icon: <FiPhone />, title: "Phone", value: "+1 (123) 456-7890" },
-    { icon: <FiMapPin />, title: "Location", value: "New Delhi, India" },
+    { icon: <FiMail />, title: "Email", value: "muskanmittal249@gmail.com" },
+    { icon: <FiPhone />, title: "Phone", value: "+91 9253644677" },
+    { icon: <FiMapPin />, title: "Location", value: "Haryana, India" },
   ];
 
   return (
