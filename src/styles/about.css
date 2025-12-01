@@ -1,0 +1,49 @@
+@keyframes float{
+    0%,100% {transform:translate(0px);}
+    50%{transform:translateY(-20px);
+    }
+}
+@keyframes fadeInUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+animate-on-scroll{
+    animation:fadeInUp 0.8s ease-out both;
+}
+
+.animate-delay-100{
+    animation-delay:0.1s ;
+}
+.animate-delay-200{
+    animation-delay:0.2s ;
+}
+.animate-delay-300{
+    animation-delay:0.3s ;
+}
+.animate-delay-400{
+    animation-delay:0.4s ;
+}
+
+.glass-effect{
+     background: rgba(255, 255, 255, 0.05);
+     backdrop-filter: blur(10px);
+     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+ .gradient-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    background-clip: text;
+        }
+@media (prefers-reduced-motion: no-preference) {
+.animate-on-scroll {
+ animation-play-state: running;
+}}
