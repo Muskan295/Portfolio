@@ -278,7 +278,7 @@ function Home() {
                   
                   <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl shadow-purple-500/20">
                     <img
-                      src="/my-image.png"
+                      src=""
                       alt="Muskan - Full Stack Developer"
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                     />

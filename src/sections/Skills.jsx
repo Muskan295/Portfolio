@@ -45,14 +45,6 @@ const logoMap = {
 
 const currentSkill = groupSkills[activeSkill.category]?.[activeSkill.skill];
 
-  useEffect(() => {
-  Object.entries(logoMap).forEach(([name, path]) => {
-    const img = new Image();
-    img.onload = () => console.log(`✅ ${name}: ${path} loaded`);
-    img.onerror = () => console.log(`❌ ${name}: ${path} FAILED`);
-    img.src = path;
-  });
-}, []);
 
 
   return (
