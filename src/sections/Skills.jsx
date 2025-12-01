@@ -6,14 +6,13 @@ function Skills() {
   const [activeSkill, setActiveSkill] = useState({ category: "", skill: "" });
 
   useEffect(() => {
-    fetch("https://portfolio-backend-8c34.vercel.app/api/skills")
+    fetch("https://portfolio-backend-9h1p.onrender.com/api/skills")
       .then((res) => res.json())
       .then((data) => setSkills(data))
       .catch((err) => console.log(err));
   }, []);
 
 const logoMap = {
-
   Html: "/logos/html.png",
   CSS: "/logos/css.png",
   Javascript: "/logos/js.png",
@@ -32,11 +31,9 @@ const logoMap = {
     acc[item.category][item.name] = item;
     return acc;
   }, {});
-
   const categories = Object.keys(groupSkills);
   const firstCategory = categories[0];
   const firstSkill = firstCategory && Object.keys(groupSkills[firstCategory])[0];
-
   useEffect(() => {
     if (!activeSkill.category && firstCategory && firstSkill) {
       setActiveSkill({ category: firstCategory, skill: firstSkill });
@@ -44,10 +41,7 @@ const logoMap = {
   }, [firstCategory, firstSkill]);
 
 const currentSkill = groupSkills[activeSkill.category]?.[activeSkill.skill];
-
-
-
-  return (
+return (
     <section id="skills" className="portfolio-section pt-32 pb-16">
       <div className="max-w-7xl mx-auto w-full px-4 md:px-8">
       
