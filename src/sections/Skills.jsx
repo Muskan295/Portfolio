@@ -6,7 +6,7 @@ function Skills() {
   const [activeSkill, setActiveSkill] = useState({ category: "", skill: "" });
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/skills")
+    fetch("https://vercel.com/muskanmittal249-gmailcoms-projects/portfolio-backend-8c34/api/skills")
       .then((res) => res.json())
       .then((data) => setSkills(data))
       .catch((err) => console.log(err));

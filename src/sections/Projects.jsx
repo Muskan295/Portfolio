@@ -7,7 +7,7 @@ function Projects() {
   const [filter, setFilter] = useState("All");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/projects")
+    fetch("https://vercel.com/muskanmittal249-gmailcoms-projects/portfolio-backend-8c34/api/projects")
       .then((res) => res.json())
       .then((data) => {
         const clean = data.filter((p) => p.title && p.description);
