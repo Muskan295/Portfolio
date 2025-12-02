@@ -120,7 +120,7 @@ function About() {
               </p>
               <p>
                 Currently mastering the <span className="text-pink-300 font-medium">MERN stack</span>  
-                and building real-world projects that create impact and solve problems.
+                 and building real-world projects that create impact and solve problems.
               </p>
               <p>
                 Passionate about learning new technologies, solving complex problems, 

@@ -92,14 +92,12 @@ function Home() {
               Passionate about building scalable applications that make an impact.
             </motion.p>
 
- 
             <motion.div 
               className="flex flex-wrap gap-4 pt-2"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
             >
-  
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -126,7 +124,6 @@ function Home() {
                 <FaDownload /> Download Resume
               </motion.a>
 
-             
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -246,51 +243,54 @@ function Home() {
             </motion.div>
           </motion.div>
 
-       
           <motion.div 
             className="relative w-full lg:w-auto lg:flex-shrink-0 mt-10 lg:mt-0"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto lg:mx-0">
-             
+            <div className="relative w-72 h-72 md:w-96 md:h-96 mx-auto lg:mx-0">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500/15 to-blue-500/15 rounded-full blur-3xl"></div>
               
               <motion.div 
                 className="relative w-full h-full rounded-full border-2 border-purple-400/30"
-                animate={{ 
-                  rotate: 360,
-                  scale: [1, 1.05, 1]
-                }}
+                animate={{ rotate: 360 }}
                 transition={{ 
-                  rotate: { duration: 20, repeat: Infinity, ease: "linear" },
-                  scale: { duration: 3, repeat: Infinity }
+                  rotate: { duration: 25, repeat: Infinity, ease: "linear" }
                 }}
               >
-                <div className="absolute inset-4 rounded-full border border-blue-400/20"></div>
-                
-                <motion.div 
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                  animate={{ rotate: -360 }}
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                >
+                <div className="absolute inset-6 rounded-full border border-blue-400/20"></div>
+              </motion.div>
+              
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <div className="relative w-52 h-52 md:w-64 md:h-64">
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full blur-xl"></div>
                   
-                  <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl shadow-purple-500/20">
+                  <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white/20 shadow-2xl shadow-purple-500/30">
                     <img
                       src="../../img/profile.jpg"
                       alt="Muskan - Full Stack Developer"
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                     />
                   </div>
-                </motion.div>
-              </motion.div>
+                  
+                  <motion.div 
+                    className="absolute -top-2 -right-2 w-4 h-4 rounded-full bg-purple-400"
+                    animate={{ scale: [1, 1.5, 1] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                  />
+                  <motion.div 
+                    className="absolute -bottom-2 -left-2 w-4 h-4 rounded-full bg-blue-400"
+                    animate={{ scale: [1, 1.5, 1] }}
+                    transition={{ duration: 2, repeat: Infinity, delay: 1 }}
+                  />
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
       </div>
 
-  
       <motion.div 
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
         initial={{ opacity: 0 }}
@@ -302,7 +302,8 @@ function Home() {
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
-         
+          <span>Scroll Down</span>
+          <div className="mt-2 w-[1px] h-8 bg-gradient-to-b from-purple-400 to-transparent"></div>
         </motion.div>
       </motion.div>
     </section>
